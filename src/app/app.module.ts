@@ -1,6 +1,5 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -19,10 +18,6 @@ import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ForexComponent } from './forex/forex.component';
 import { CuacaComponent } from './cuaca/cuaca.component'
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

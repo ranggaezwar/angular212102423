@@ -10,8 +10,6 @@ import { LoginComponent } from './login/login.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { OtentikasiGuard } from './otentikasi.guard';
 import { RegisterComponent } from './register/register.component';
-
-
 const routes: Routes = [
   {path: "", redirectTo: "login", pathMatch: "full"},
   {path: "admin", component:AdminComponent},
