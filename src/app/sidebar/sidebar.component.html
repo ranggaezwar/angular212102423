@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="assets/index3.html" class="brand-link">
       <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
@@ -35,42 +35,57 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item has-treeview {{ moduleName == 'dashboard' ? 'menu-open': '' }} {{moduleName == 'dashboard2' ? 'menu-open' : '' }}">
+            <a href="#" class="nav-link {{ moduleName == 'dashboard' ? 'active' : '' }} {{moduleName == 'dashboard2' ? 'active' : '' }}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
               </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav treeview">
               <li class="nav-item">
-                <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'dashboard' ? 'active' : ''}} ">
+                <a href="/dashboard" class="nav-link {{ moduleName == 'dashboard' ? 'active' : ''}} ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a [routerLink]="['/dashboard2']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'dashboard2' ? 'active' : ''}}">
+                <a href="/dashboard2" class="nav-link {{ moduleName == 'dashboard2' ? 'active' : ''}} ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v2</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a [routerLink]="['/dashboard3']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'dashboard3' ? 'active' : ''}}">
+                <a href="/dashboard3" class="nav-link {{ moduleName == 'dashboard3' ? 'active' : ''}} ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
               </li>
             </ul>
-          </li>
+            </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a [routerLink]="['/mahasiswa']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'mahasiswa' ? 'active' : '' }}">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Mahasiswa
               </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/forex']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'forex' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Forex
+                </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/cuaca']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'cuaca' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-cloud-rain"></i>
+                <p>
+                  Cuaca
+                </p>
             </a>
           </li>
           <li class="nav-item">
@@ -671,4 +686,11 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
-</aside>
+  </aside>
+              
+            
+
+
+        
+      
+   
