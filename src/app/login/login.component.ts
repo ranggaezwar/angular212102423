@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
 
         if (row.idCount != "1")
         {
-          this.showPeringatanModal("Id atau password tidak cocok");
+          this.showPeringatanModal("Id atau password cocok");
           return;
         }
 
