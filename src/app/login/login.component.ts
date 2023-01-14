@@ -26,10 +26,10 @@ export class LoginComponent implements OnInit {
   signIn():void {
     console.log("signIn()");
 
-    var userId = $("idText").val();
+    var userId = $("#idText").val();
     userId = encodeURIComponent(userId);
 
-    var password = $("passwordText").val();
+    var password = $("#passwordText").val();
     password = encodeURIComponent(password);
 
     var url = "https://stmikpontianak.net/011100862/login.php" +
@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
 
         if (row.idCount != "1")
         {
-          this.showPeringatanModal("Id atau password cocok");
+          this.showPeringatanModal("Id atau password tidak cocok");
           return;
         }
 

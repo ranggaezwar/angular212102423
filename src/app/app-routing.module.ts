@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: "forex", component:ForexComponent},
   {path: "register", component: RegisterComponent},
   {path: "login", component: LoginComponent},
-  {path: "mahasiswa", component: MahasiswaComponent, canActivate : [OtentikasiGuard] }
+  {path: "mahasiswa", component: MahasiswaComponent }
 ];
 
 @NgModule({
